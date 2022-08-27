@@ -1,0 +1,14 @@
+<body>
+  <script src="./lib-es.js"></script>
+  <script type="module">
+    import Schema from './lib-es.js';
+    let decription = new Schema({
+      name: [{ required: true, type: 'string', message: '请输入姓名' }],
+    });
+
+    // [ { message: '请输入姓名', field: 'name' } ]
+    decription.validate({ name: '' }, (error) => {
+      console.log(error);
+    });
+  </script>
+</body>
