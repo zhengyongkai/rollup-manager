@@ -13,8 +13,13 @@
   "dependencies": {
     "async-validator": "~1.8.1",
     "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-replace": "^2.2.0"
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-vue": "^5.1.9",
+    "autoprefixer": "^10.4.8",
+    "rollup-plugin-sass": "^1.2.13"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",

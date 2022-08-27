@@ -1,0 +1,11 @@
+{
+  "name": "rollup-vue-kevins",
+  "version": "1.0.0",
+  "description": "a components for vue2",
+  "main": "lib-es.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhengyongkai",
+  "license": "ISC"
+}

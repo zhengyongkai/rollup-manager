@@ -1,20 +1,12 @@
-import Schema from 'async-validator';
+import './package/theme-chalk/index.scss';
 
+import KIcon from './package/components/icon/index';
 
+function install(Vue) {
+  Vue.component(KIcon.name, KIcon);
+}
 
-// let decription = new Schema({
-//   name: [{ required: true, type: 'string', message: '请输入姓名' }],
-// });
-
-// // [ { message: '请输入姓名', field: 'name' } ]
-// decription.validate({ name: '' }, (error) => {
-//   console.log(error);
-// });
-
-
-export default Schema
-
-// // import { sayHelloRollup } from './modules';
-// import { getFlat } from './modules.js';
-
-// console.log(getFlat());
+export { KIcon };
+export default {
+  install,
+};

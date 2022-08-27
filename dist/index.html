@@ -1,14 +1,25 @@
 <body>
-  <script src="./lib-es.js"></script>
-  <script type="module">
-    import Schema from './lib-es.js';
-    let decription = new Schema({
-      name: [{ required: true, type: 'string', message: '请输入姓名' }],
-    });
-
-    // [ { message: '请输入姓名', field: 'name' } ]
-    decription.validate({ name: '' }, (error) => {
-      console.log(error);
-    });
-  </script>
+  <head>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <!-- <link rel="stylesheet" href="./css/el-button.css" /> -->
+  </head>
+  <div id="app">
+      <k-icon name="success"></k-icon>
+  </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.10"></script>
+<script type="module" src="./lib-es.js"></script>
+<script type="module">
+  import {
+   KIcon
+  } from "./lib-es.js";
+  Vue.component(KIcon.name, KIcon);
+  new Vue({
+    el: "#app",
+  })
+</script>
+<style>
+  body {
+    padding: 20px;
+  }
+</style>
