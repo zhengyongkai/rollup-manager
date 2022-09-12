@@ -1,0 +1,101 @@
+.k-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  text-align: center;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  &.is-disabled {
+    color: #c0c4cc;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: #fff;
+    border-color: #ebeef5;
+  }
+  &.is-round {
+    border-radius: 20px;
+  }
+  &.is-circle {
+    border-radius: 50%;
+    padding: 12px;
+  }
+  &.is-loading {
+    position: relative;
+    pointer-events: none;
+  }
+}
+
+.k-button--primary {
+  color: #fff;
+  background-color: $--color-primary;
+  border-color: $--color-primary;
+  &:hover,
+  &:focus,
+  &.is-disabled {
+    color: #fff;
+    background-color: #a0cfff;
+    border-color: #a0cfff;
+  }
+}
+
+.k-button--danger {
+  color: #fff;
+  background-color: $--color-danger;
+  border-color: $--color-danger;
+  &:hover,
+  &:focus,
+  &.is-disabled {
+    color: #fff;
+    background-color: $--color-disabled-danger;
+    border-color: $--color-disabled-danger;
+  }
+}
+
+.k-button--success {
+  color: #fff;
+  background-color: $--color-success;
+  border-color: $--color-success;
+  &:hover,
+  &:focus,
+  &.is-disabled {
+    color: #fff;
+    background-color: $--color-disabled-success;
+    border-color: $--color-disabled-success;
+  }
+}
+
+.k-button--warning {
+  color: #fff;
+  background-color: $--color-warning;
+  border-color: $--color-warning;
+  &:hover,
+  &:focus,
+  &.is-disabled {
+    color: #fff;
+    background-color: $--color-disabled-warning;
+    border-color: $--color-disabled-warning;
+  }
+}
+
+.k-button--info {
+  color: #fff;
+  background-color: $--color-info;
+  border-color: $--color-info;
+  &:hover,
+  &:focus,
+  &.is-disabled {
+    color: #fff;
+    background-color: $--color-disabled-info;
+    border-color: $--color-disabled-info;
+  }
+}

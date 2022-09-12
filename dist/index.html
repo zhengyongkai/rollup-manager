@@ -4,19 +4,30 @@
     <!-- <link rel="stylesheet" href="./css/el-button.css" /> -->
   </head>
   <div id="app">
-      <k-icon name="success"></k-icon>
+    <k-button type="primary">我是按钮</k-button>
+    <h3>普通</h3>
+    <k-button type="success">我是成功按钮</k-button>
+    <k-button type="warning">我是警告按钮</k-button>
+    <k-button type="info">我是提示按钮</k-button>
+    <k-button type="danger">我是危险按钮</k-button>
+    <h3>禁用</h3>
+    <k-button type="success" disabled>我是成功按钮</k-button>
+    <k-button type="warning" disabled>我是警告按钮</k-button>
+    <k-button type="info" disabled>我是提示按钮</k-button>
+    <k-button type="danger" disabled>我是危险按钮</k-button>
+    <h3>loading</h3>
+    <k-button type="success"  loading>加载中</k-button>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10"></script>
 <script type="module" src="./lib-es.js"></script>
 <script type="module">
-  import {
-   KIcon
-  } from "./lib-es.js";
+  import { KIcon, KButton } from './lib-es.js';
   Vue.component(KIcon.name, KIcon);
+  Vue.component(KButton.name, KButton);
   new Vue({
-    el: "#app",
-  })
+    el: '#app',
+  });
 </script>
 <style>
   body {
